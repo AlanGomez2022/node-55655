@@ -1,7 +1,7 @@
 let cuenta = 0;
 
 function contador(numero) {
-  cuenta+=numero;
+  cuenta += numero;
 }
 
 console.log(cuenta);
@@ -19,11 +19,19 @@ const concatenar = () => {
 
 concatenar();
 
-const corroborar = (arreglo)=>{
-    const tiposDeDatos = arreglo.map (cadaUno => ( {valor: cadaUno , tipoDeDato: typeof cadaUno}))
-    console.log(tiposDeDatos);
-    return tiposDeDatos;
-}
+const imprimir = (palabra) => console.log(palabra);
 
-const resultado = corroborar ([1, "hola", null, false])
-corroborar([Nan, undefined, true, imprimir, resultado])
+const corroborar = (arreglo) => {
+  const tiposDeDatos = arreglo.map((cadaUno) => ({
+    valor: cadaUno,
+    tipoDeDato: typeof cadaUno,
+  }));
+  console.log(tiposDeDatos);
+  return tiposDeDatos;
+};
+
+imprimir ('hola toga');
+
+const resultado = corroborar([NaN,1, "hola", null, false]);
+corroborar (resultado)
+
