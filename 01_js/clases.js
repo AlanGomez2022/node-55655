@@ -34,3 +34,4 @@ profe.imprimirNombreCompleto();
 
 console.log(Persona.cantidadDePersonas);
 console.log(profe.orden)
+console.log(tutor.orden);
